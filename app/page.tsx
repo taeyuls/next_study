@@ -1,3 +1,17 @@
+import Link from "next/link";
+
 export default function Home() {
-  return <div></div>;
+  let name = "park";
+  return (
+    <div>
+      <div className="navbar">
+        <Link href="/">홈</Link>
+        <Link href="/list">List</Link>
+      </div>
+      <h4 className="title" style={{ color: "red", fontSize: "30px" }}>
+        애플후레시
+      </h4>
+      <p className="title-sub">by dev {name}</p>
+    </div>
+  );
 }
